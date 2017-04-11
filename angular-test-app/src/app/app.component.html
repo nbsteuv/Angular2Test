@@ -1,5 +1,6 @@
 <input type="text" [(ngModel)]="name">
 <p>{{name}}</p>
+<button [disabled]="name == ''" (click)="onResetClick()">Click Me</button>
 
 <app-success></app-success>
 <app-warning></app-warning>
